@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title></title>
+    </head>
+    <body>
+        <h1>This is the profile page</h1>
+        <h3>name : {{name}}</h3>
+        <h3>company : {{company}}</h3>
+        <h3>Languages : </h3>
+        <ul>
+            
+                {{#language}}
+                    <li>
+                        {{.}}
+                    </li>
+                {{/language}}
+            
+        </ul>
+
+        <form action='/addprofile' method="POST">
+            <input type="text" placeholder="name" name="name"/><br/>
+            <input type="text" placeholder="company" name="company"/><br/>
+            <input type="text" placeholder="languages" name="language"/><br/>
+            <input type="submit" value="submit"/>
+        </form>
+    </body>
+</html>

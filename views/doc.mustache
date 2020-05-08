@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>Online Tutoting Api</title>
+    </head>
+    <body>
+    <div class="header justify-content flex-row flex-basis">
+        <h3>TechieTutor</h3>
+        <ul class="flex-row text-center">
+            <li><a href="about.html">About</a></li>
+            <li><select><option>Versions</option></select></li>
+        </ul>
+    </div>
+        
+    <div class="container flex-row justify-content">
+        <div class="flex-basis">
+            <h1>Overview</h1>
+            <p>This describes the resources that make up the official ONLINE TUTORING REST API v1</p>
+            <ol>
+                <li><a href="#">Current Version</a></li>
+                <li><a href="">Schema</a></li>
+                <li><a href="">Authentication</a></li>
+                <li><a href="">Root endpoint</a></li>
+                <li><a href="">Client errors</a></li>
+                
+
+                <li><a href="">HTTP redirects</a></li>
+                <li><a href="">HTTP verbs</a></li>
+            </ol>
+        </div>
+            <div class="flex-basis">
+            <h1>Overview</h1>
+        </div>
+    </div>
+
+    <div class="container flex-column">
+        <h2>Current Version</h2>
+        <p>By default, all requests to https://techietutor.herokuapp.com/v1 receive the v3 version of the REST API</p>
+        
+        <h2>Schema</h2>
+        <p>All API access is over HTTPS, and accessed from https://techietutor.herokuapp.com/v1. All data is sent and received as JSON.</p>
+        <h3>Summary representations</h3>
+        <p>When you fetch a list of resources, the response includes a subset of the attributes for that resource. This is the "summary" representation of the resource. (Some attributes are computationally expensive for the API to provide. For performance reasons, the summary representation excludes those attributes. To obtain those attributes, fetch the "detailed" representation.)
+        Example: When you get a list of repositories, you get the summary representation of each repository. Here, we fetch the list of repositories owned by the octokit organization:
+        </p>
+        <p>GET: tutor/category</p>
+        <h3>Detailed representations </h3>
+        <p>When you fetch an individual resource, the response typically includes all attributes for that resource. This is the "detailed" representation of the resource. (Note that authorization sometimes influences the amount of detail included in the representation.)
+            Example: When you get an admin information, you get the detailed representation of the . Here, we fetch the octokit/octokit.rb repository:
+        </p>
+        <p>GET: category/subjects/Maths</p>
+        
+        <h2>Root endpoint</h2>
+        <p>You can issue a GET request to the root endpoint to get all the endpoint categories that the REST API v1 supports:</p>
+        <p>GET: https://api.github.com/v1</p>
+        
+        <h2>Client errors</h2>
+        <p>There are three possible types of client errors on API calls that receive request bodies:</p>
+        
+    </div>
+    </body>
+</html>
