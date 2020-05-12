@@ -1,5 +1,4 @@
 const Mongoose=require('mongoose');
-const Subject=require('../model/subjectmodel');
 
 const Schema=Mongoose.Schema;
 
