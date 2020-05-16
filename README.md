@@ -1,7 +1,7 @@
 Categories routes
-Root Endpoint:  ìhttps://thetechytutor.herokuapp.com/v1/î
+######Root Endpoint:  ‚Äúhttps://thetechytutor.herokuapp.com/v1/‚Äù
 
-VERB:POST
+###VERB:POST
 //create a category
      '/category'
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category
@@ -36,7 +36,7 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/JSS
 
 
 5eb9a814b1b6001ab4b14b46
-Root Endpoint:  ìhttps://thetechytutor.herokuapp.com/v1/î
+Root Endpoint:  ‚Äúhttps://thetechytutor.herokuapp.com/v1/‚Äù
 Subjects routes
 
 VERB:GET
@@ -57,7 +57,7 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/5eb9aea8c3338724d470c06
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/subjects/5eb9aea8c3338724d470c06a
      
 
-Root Endpoint:  ìhttps://thetechytutor.herokuapp.com/v1/î
+Root Endpoint:  ‚Äúhttps://thetechytutor.herokuapp.com/v1/‚Äù
 Lessons routes
 
 VERB:POST
@@ -92,7 +92,7 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson/5eb9aea8c3338724d470c06a
 
 
 Students routes
-Root Endpoint:  ìhttps://thetechytutor.herokuapp.com/v1/î
+Root Endpoint:  ‚Äúhttps://thetechytutor.herokuapp.com/v1/‚Äù
 
 
 VERB:POST
@@ -122,7 +122,7 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/students
      
 
 Tutors routes
-Root Endpoint:  ìhttps://thetechytutor.herokuapp.com/v1/î
+Root Endpoint:  ‚Äúhttps://thetechytutor.herokuapp.com/v1/‚Äù
 
 VERB:POST
 
