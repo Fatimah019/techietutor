@@ -6,9 +6,18 @@ VERB:POST
      '/category'
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category
 
+Fields:
+name:	 SSS
+description:	Senior Secondary level
+
 //update subjects under 3 categories: primary, JSS, SSS by id
      '/categories/subjects/:id'
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/categories/5eb9a814b1b6001ab4b14b46
+
+Fields:
+name:	 SSS
+description:	Senior Secondary level
+
 
 VERB:GET
 //retrieve all categories
@@ -19,10 +28,18 @@ VERB:PUT
 //update a subject in a category (by Id)
      '/category/subject/:id'
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/subject/5eb9aea8c3338724d470c06a
+Fields:
+name:	 SSS
+description:	Senior Secondary level
+
      
 //update a category
      '/category/:id'
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/5eb9aea8c3338724d470c06a
+Fields:
+name:	 SSS
+description:	Senior Secondary level
+
 
 VERB:DELETE
 //delete a subject in a category (by Id)
@@ -38,6 +55,15 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/JSS
 5eb9a814b1b6001ab4b14b46
 Root Endpoint:  “https://thetechytutor.herokuapp.com/v1/”
 Subjects routes
+VERB:POST
+//create subjects in a category
+     '/categories/subject/:categoryid
+EXAMPLE: https://thetechytutor.herokuapp.com/v1/categories/subjects/category:id
+Fields:
+name:	 subject name
+courseCode: subject course code
+textbook: text book to use for a subject
+
 
 VERB:GET
 //search for subjects by name, sorted alphabetically in ascending order.
@@ -63,8 +89,12 @@ Lessons routes
 VERB:POST
 //create a lesson
      '/lessons/:id'
-EXAMPLE: https://thetechytutor.herokuapp.com/v1/category
-EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson/5eb9aea8c3338724d470c06a
+EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson
+EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson
+Fields:
+title:	title one
+note:	note one
+
 
 VERB:GET
 //get all lessons by subject id
@@ -83,6 +113,10 @@ VERB:PUT
 //update a lesson by id
      '/lesson/:id'
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson/5eb9aea8c3338724d470c06a
+Fields:
+title:	title one
+note:	note one
+
 
 VERB:DELETE
 //delete a lesson by id
