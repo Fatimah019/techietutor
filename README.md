@@ -1,6 +1,6 @@
-﻿# Online Tutoring App (API) 
+﻿# Online Tutoring App (API) V1
 
-An online tutoring app that has three categories of users: Admin, tutors and students. A user can register as a student on this platform. Afterwards, they can view all categories they can belong to. They can also view all subjects taught in a category. 
+An online tutoring App that has three categories of users: Admin, tutors and students. Each of these users have their specific roles. 
 
 ## Getting Started
 
@@ -9,7 +9,9 @@ Root Endpoint: (https://thetechytutor.herokuapp.com/v1/)
 ### Install all the dependencies in the package.json file
 
 ```
-npm install “package”
+Run “npm init” then,
+
+“npm install” to install all the dependencies in the package.json file
 ```
 
 ### Admin Login details
@@ -48,14 +50,16 @@ retrieve all categories('/categories')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/categories
 ```
 
+
 ### VERB:PUT
+
 update a subject in a category (by Id)('/category/subject/:id')
 
 ```
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/subject/5eb9aea8c3338724d470c06a
 ```
 
-[update a category]('/category/:id')
+update a category('/category/:id')
 
 ```
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/5eb9aea8c3338724d470c06a
@@ -63,7 +67,7 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/5eb9aea8c3338724d470c06
 
 ### VERB:DELETE
 
-[delete a subject in a category (by Id)]('/category/subject/:id')
+delete a subject in a category (by Id)('/category/subject/:id')
 
 ```EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/5eb9aea8c3338724d470c06a
 ```
