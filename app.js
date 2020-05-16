@@ -2,6 +2,7 @@ const express=require ("express");
 const path=require('path');
 const hooganMiddleware=require('hogan-middleware');
 const bodyParser=require('body-parser');
+const jwt=require('jsonwebtoken');
 const cors=require('cors');
 const mongoose=require('mongoose');
 const dbConfig=require('./configure/config');

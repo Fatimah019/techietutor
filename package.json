@@ -11,6 +11,7 @@
   "author": "Fatimah_Davies <daviesfatimah97@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accesscontrol": "^2.2.1",
     "bcrypt": "^4.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -20,6 +21,8 @@
     "hjs": "0.0.6",
     "hogan-middleware": "^0.2.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.12"
+    "locus": "^2.0.4",
+    "mongoose": "^5.9.12",
+    "passport-jwt": "^4.0.0"
   }
 }

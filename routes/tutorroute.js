@@ -1,7 +1,35 @@
 const express=require("express");
 const router=express.Router();
-const auth=require('../controller/auth');
-//const auth=require('../middleware/auth');
+const tutor=require("../controller");
+const auth=require('../middleware/auth');
+
+//register a tutor
+router.post('/signup', tutor.registerTutor);
+
+router.get('/user/tutor', auth.ifLoggedIn,  tutor.tutorTest);
+//login tutor
+router.post('/login', tutor.loginTutor);//done(general 6)
+
+//search for tutors by first name, sorted alphabetically in ascending order.
+router.get('/tutor/:firstName', tutor.getTutorByFirstName)//left with sorting(general 5)
+
+//retieve all tutors
+router.get('/tutors', auth.ifLoggedIn, tutor.getTutor);//--done(admin 5)
+
+//get a tutor by id
+router.get('/tutor/:id', auth.ifLoggedIn,  tutor.getATutorById);//--undone(admin 6)
+
+//deactivate (delete) a tutor by id
+router.delete('/tutor/:id', auth.ifLoggedIn,  tutor.deactivateTutorById);//--done(admin 7)
+
+//delete a regusterd subject
+//router.delete('/subject/:name', auth.ifLoggedIn, tutor.deleteASubject);
+
+
+
+
+
+
 /*
 //tutors signup
 router.get('/signup/tutor', (req, res, next)=>{
@@ -18,21 +46,19 @@ router.get('/login/tutor', (req, res, next)=>{
     res.render('login', null);
 }).post('/login/tutor', auth.loginTutor);
 
-//get all tutors details
-router.get('/tutors', auth.getTutor);
 
 //get subjectts from category
 
 /*
 Api test on postman
 */
-//register an admin
-router.post('/signup', auth.registerTutor);
-//login user
-router.post('/login', auth.loginTutor);
- //search for tutors by first name, sorted alphabetically in ascending order.
 
 //* router.get('/tutor/firstname', auth.getTutorByFirstName);
+
+
+
+
+
 
 module.exports=router;
 

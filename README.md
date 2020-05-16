@@ -4,7 +4,7 @@ An online tutoring app that has three categories of users: Admin, tutors and stu
 
 ## Getting Started
 
-*[Root Endpoint:](https://thetechytutor.herokuapp.com/v1/)
+Root Endpoint: (https://thetechytutor.herokuapp.com/v1/)	
 
 ### Install all the dependencies in the package.json file
 
@@ -18,11 +18,11 @@ npm install “package”
 * Password:	adminpass
 
 
-## Category routes
+### Category routes
 
-## VERB:POST
+### VERB:POST
 
-## Fields
+### Fields
 
 * name
 
@@ -40,7 +40,7 @@ update subjects under 3 categories: primary, JSS, SSS by id ('/categories/subjec
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/categories
 ```
 
-## VERB:GET
+### VERB:GET
 
 retrieve all categories('/categories')
 
@@ -48,7 +48,7 @@ retrieve all categories('/categories')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/categories
 ```
 
-## VERB:PUT
+### VERB:PUT
 update a subject in a category (by Id)('/category/subject/:id')
 
 ```
@@ -61,7 +61,7 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/subject/5eb9aea8c333872
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/5eb9aea8c3338724d470c06a
 ```
 
-## VERB:DELETE
+### VERB:DELETE
 
 [delete a subject in a category (by Id)]('/category/subject/:id')
 
@@ -75,9 +75,9 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/category/JSS
 
 
 
-## Subjects routes
+### Subjects routes
 
-## VERB:GET
+### VERB:GET
 
 search for subjects by name, sorted alphabetically in ascending order. ('/subject/:subjectName')
 
@@ -103,9 +103,9 @@ get populated subjects in a category// retrieve all subjects, by category ('/sub
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/subjects/5eb9aea8c3338724d470c06a
 ```
 
-## Lessons routes
+### Lessons routes
 
-## VERB:POST
+### VERB:POST
 
 create a lesson ('/lessons/:id')
 
@@ -113,12 +113,12 @@ create a lesson ('/lessons/:id')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/category
 ```
 
-## Fields are
+### Fields are
 
 * title
 * note
 
-## VERB:GET
+### VERB:GET
 
 get all lessons by subject id ('/lessons/:id')
 
@@ -138,7 +138,7 @@ get a lesson by id ('/lesson/:id')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson/5eb9aea8c3338724d470c06a
 ```
 
-## VERB:PUT
+### VERB:PUT
 
 update a lesson by id ('/lesson/:id')
 
@@ -146,7 +146,7 @@ update a lesson by id ('/lesson/:id')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson/5eb9aea8c3338724d470c06a
 ```
 
-## VERB:DELETE
+### VERB:DELETE
 
 delete a lesson by id ('/lesson/:id')
 
@@ -154,11 +154,11 @@ delete a lesson by id ('/lesson/:id')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/lesson/5eb9aea8c3338724d470c06a
 ```
 
-## Students routes
-## Root Endpoint:  “https://thetechytutor.herokuapp.com/v1/”
+### Students routes
+### Root Endpoint:  “https://thetechytutor.herokuapp.com/v1/”
 
 
-## VERB:POST
+### VERB:POST
 
 register a student ('/student/signup')
 
@@ -166,7 +166,7 @@ register a student ('/student/signup')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/student/signup
 ```
 
-## Fields:
+### Fields:
 
 * First:	 firstname
 * Last:	lastname
@@ -180,12 +180,12 @@ login students ('/student/login')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/student/login
 ```
 
-## Fields:
+### Fields:
 
 * Email:	emailaddress
 * Password:		password
 
-## VERB:GET
+### VERB:GET
 
 get all student details ('/students')
 
@@ -194,11 +194,9 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/students
 ```
 
 
-## Tutors routes
+### Tutors routes
 
-## Root Endpoint:  “https://thetechytutor.herokuapp.com/v1/”
-
-## VERB:POST
+### VERB:POST
 
 register a tutor ('/signup')
 
@@ -206,12 +204,12 @@ register a tutor ('/signup')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/signup
 ```
 
-## Fields:
+### Fields:
 
 * First:	 firstname
 * Last:	lastname
-*Email:	emailaddress
-*Password:	password
+* Email:	emailaddress
+* Password:	password
 
 
 
@@ -221,7 +219,7 @@ login tutor ('/login')
 EXAMPLE: https://thetechytutor.herokuapp.com/v1/login
 ```
 
-## Fields:
+### Fields:
 
 * Email:	emailaddress
 * Password:	  password
@@ -255,14 +253,14 @@ EXAMPLE: https://thetechytutor.herokuapp.com/v1/tutor/5eb9aea8c3338724d470c06a
 
 
 
-## Error Messages
+### Error Messages
 
 * Status: 200 ----------------Success
 * Status: 400 ----------------Page not found
 * Status: 401 ----------------Access denied/Authorization error
 
 
-## Note: 
+### Note: 
 All routes are protected. Only authenticated logged in users can  have access to routes based on their specified roles
 
 
