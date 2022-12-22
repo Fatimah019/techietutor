@@ -20,7 +20,7 @@
     "express-validator": "^5.3.1",
     "hjs": "0.0.6",
     "hogan-middleware": "^0.2.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "locus": "^2.0.4",
     "mongoose": "^5.9.12",
     "passport-jwt": "^4.0.0"
